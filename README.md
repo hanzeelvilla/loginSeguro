@@ -13,18 +13,18 @@ npm i
 ```
 
 3. Crear un archivo `.env` en la raíz del directorio.
-```JSON
+```BASH
 DATABASE_URL="mysql://user:pswd@localhost:3306/bd_name"
 ```
-> [!INFO]
-> EL puerto default de mysql es `3306`
+> [!NOTE]
+> El puerto default de mysql es `3306`.
 
-4. Crear la migración de la BD
+4. Crear la migración de la BD.
 ```bash
 npx prisma migrate dev --name init
 ```
 
-5. Iniciar el servidor
+5. Iniciar el servidor.
 ```bash
 npm run dev
 ```
