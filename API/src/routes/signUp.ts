@@ -1,8 +1,9 @@
 import {Router} from 'express';
+import {usersMiddleware} from '../middleware/usersMiddleware';
 
 const router = Router();
 
-router.get('/', (req, res) => {
+router.post('/', usersMiddleware.validateSignUp, (req, res, next) => {
     res.json({message: 'Estas dentro nena'});
 });
 
