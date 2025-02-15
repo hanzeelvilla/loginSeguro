@@ -1,0 +1,9 @@
+// Create user
+POST http://localhost:3000/api/sign-up
+Content-Type: application/json
+
+{
+    "userName": "testUser2",
+    "password": "testPassword",
+    "repeatedPassword": "testPassword"
+}
