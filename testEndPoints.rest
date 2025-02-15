@@ -10,7 +10,7 @@ Content-Type: application/json
 
 ###
 
-// Login
+// Login user
 POST http://localhost:3000/api/login
 Content-Type: application/json
 
@@ -21,6 +21,17 @@ Content-Type: application/json
 
 ###
 
+// Login Admin
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "userName": "hanzeel",
+    "password": "EsoBrad1234"
+}
+
+###
+
 // Listar usuarios (solo funcina si eres admin)
 GET http://localhost:3000/api/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjNmMTE4YjZlLTU2N2QtNDQyYS05MDhkLTEyODc0MjI5ZDMxOCIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzM5NjYwMDI2LCJleHAiOjE3Mzk2NjM2MjZ9.JXxlhU8H5j5_Fpo4sQK5jvvIOck9gUz73m3HGi8Ym1w
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE3MjMxMTE0LTQwZjQtNDI1OC05YTY0LTA1MDY3MjRiMzQwMyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTczOTY2MTg1NCwiZXhwIjoxNzM5NjY1NDU0fQ.fcD6D_V9mNf1Ozo3fhkzeTeESA6UY5nLHaoTL2NXRfQ

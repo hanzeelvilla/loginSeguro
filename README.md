@@ -28,3 +28,8 @@ npx prisma migrate dev --name init
 ```bash
 npm run dev
 ```
+
+6. Crear un usuario tipo ADMIN
+```bash
+npm run createAdmin nombreDeUsuario ContraseñaUsuario
+```
