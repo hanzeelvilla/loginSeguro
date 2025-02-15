@@ -20,6 +20,10 @@ const loginController = async (req, res) => {
             return res.status(401).json({error: "Credenciales incorrectas"});
         }
 
+        if (!user.isActive) {
+            return res.status(401).json({error: "Usuario inactivo, dile a Hanzeel que te active (son $50 baros papá 😎)"}); 
+        }
+
         const validPassword = await bcrypt.compare(password, user.password);
 
         if (!validPassword) {
