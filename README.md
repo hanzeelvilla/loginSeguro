@@ -12,24 +12,25 @@ cd API/
 npm i
 ```
 
-3. Crear un archivo `.env` en la raíz del directorio.
+1. Crear un archivo `.env` en la raíz del directorio. Con la conexion a MySQL y una frase secreta para los tokens.
 ```BASH
 DATABASE_URL="mysql://user:pswd@localhost:3306/bd_name"
+JWT_SECRET="your_secret_phrase"
 ```
 > [!NOTE]
 > El puerto default de mysql es `3306`.
 
-4. Crear la migración de la BD.
+1. Crear la migración de la BD.
 ```bash
 npx prisma migrate dev --name init
 ```
 
-5. Iniciar el servidor.
+1. Iniciar el servidor.
 ```bash
 npm run dev
 ```
 
-6. Crear un usuario tipo ADMIN
+1. Crear un usuario tipo ADMIN
 ```bash
 npm run createAdmin nombreDeUsuario ContraseñaUsuario
 ```
